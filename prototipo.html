@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="icone2.png" type="image/png">
+    <title>BANANA BIO</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a>BANANA BIO</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prototipo.html">Protótipo</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="artigo.html">Artigo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parallax2">
+        <div class="card1">
+            <h1>Prototipo de<br>
+                <h1 class="h1B">Arduino</h1>
+            </h1>
+            <br>
+            <hr>
+            <br>
+            <p class="p1">Nosso objetivo com o protótipo de Arduino é integrar a automação de forma segura ao nosso
+                projeto, garantindo maior confiabilidade e controle no funcionamento do sistema.</p>
+        </div>
+
+
+        <div class="card2">
+            <img src="ababu.png" alt="">
+            <br>
+            <hr style="border: none; height: 1px; background-color: black;">
+            <br>
+            <p class="p2"><a href="https://www.tinkercad.com/things/5o9tHlT1SsJ-ababu/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Nosso Prototipo</a></p>
+        </div>
+    </div>
+
+
+    <div class="pt2" style="color: rgb(0, 0, 0);">
+        <h1>componentes</h1>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Componente</th>
+            </tr>
+            <tr>
+                <td>U2</td>
+                <td>1</td>
+                <td>Sensor de temperatura [TMP36]</td>
+            </tr>
+            <tr>
+                <td>D1</td>
+                <td>1</td>
+                <td>LED Verde</td>
+            </tr>
+            <tr>
+                <td>D2</td>
+                <td>1</td>
+                <td>LED Vermelho</td>
+            </tr>
+            <tr>
+                <td>U1</td>
+                <td>1</td>
+                <td>Arduino Uno R3</td>
+            </tr>
+            <tr>
+                <td>SERVO1</td>
+                <td>2</td>
+                <td>Posicional Micro Servo</td>
+            </tr>
+            <tr>
+                <td>SERVO2</td>
+                <td>2</td>
+                <td>Posicional Micro Servo</td>
+            </tr>
+            <tr>
+                <td>R6</td>
+                <td>1</td>
+                <td>Sensor de Força</td>
+            </tr>
+            <tr>
+                <td>R1</td>
+                <td>1</td>
+                <td>Resistor 200 Ω</td>
+            </tr>
+            <tr>
+                <td>R2</td>
+                <td>1</td>
+                <td>Resistor 100 Ω</td>
+            </tr>
+            <tr>
+                <td>R3</td>
+                <td>1</td>
+                <td>Resistor 9.1 kΩ</td>
+            </tr>
+        </table>
+        <div class="image-wrapper"> <!-- Nova div para centralização -->
+            <div class="image-collage">
+                <img src="kitububu.jpg" alt="Imagem 1" class="img1">
+                <div class="img-container">
+                    <img src="abububuduino.png" alt="Imagem 2" class="img2">
+                    <img src="arduinobubu.jpg" alt="Imagem 3" class="img3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="abubu">
+        <h1>Funcionamento do Sistema de Gerenciamento de Temperatura para Biogerador de Energia utilizando Arduino</h1>
+        <p>O sistema de gerenciamento de temperatura descrito é projetado para otimizar a operação de um biogerador de
+            energia que utiliza a biomassa de banana como fonte de combustível. Esse sistema é responsável por controlar
+            as condições de operação de um gerador que usa vapor de alta pressão para gerar eletricidade. O
+            gerenciamento de temperatura e pressão é crucial para garantir o funcionamento seguro e eficiente do
+            biogerador.</p><br>
+
+        <p><h2>1. Controle de Temperatura com Sensor de Temperatura</h2></p><br>
+        <p>Para monitorar e controlar a temperatura do sistema, o sistema utiliza um sensor de temperatura (como o LM35
+            ou DHT11). Esse sensor é responsável por medir a temperatura interna do sistema de caldeira onde ocorre a
+            produção de vapor. A leitura do sensor é enviada para o Arduino, que continuamente compara a temperatura
+            real com a temperatura desejada para o funcionamento ideal.</p><br>
+
+        <p>Quando a temperatura atinge níveis críticos ou fora da faixa operacional ideal, o Arduino toma ações
+            corretivas para ajustar o sistema. Se a temperatura estiver alta demais, o controle do sistema pode iniciar
+            uma ação de resfriamento, enquanto se a temperatura estiver baixa, o sistema pode ajustar outros parâmetros
+            para otimizar a geração de vapor.</p><br>
+
+        <p> <h2>2. Controle de Pressão com Sensor de Pressão</h2></p><br>
+        <p>A pressão do sistema também é monitorada por um sensor de pressão (como o MPX5700AP). Esse sensor mede a
+            pressão interna do sistema gerador, crucial para o controle da geração de vapor. A pressão deve ser mantida
+            dentro de uma faixa segura e eficiente para que o vapor gerado seja de qualidade e capaz de movimentar as
+            turbinas ou gerar eletricidade.</p><br>
+
+        <p>Se a pressão exceder um limite seguro, o Arduino poderá tomar medidas, como liberar vapor ou reduzir a
+            produção de vapor. Se a pressão for muito baixa, o sistema pode ajustar a produção de vapor ou acionar
+            mecanismos para aumentar a pressão de forma segura.</p>
+
+        <p><h2>3. Servo Motor para Liberação de Vapor</h2></p><br>
+        <p>O servo motor 1 é utilizado para controlar a liberação de vapor. Esse servo motor está conectado a uma
+            válvula de controle de vapor que pode abrir ou fechar com base nas leituras de temperatura e pressão. Quando
+            o sistema detecta que a pressão está muito alta ou a temperatura está muito elevada, o servo motor é
+            acionado para liberar vapor em um ritmo controlado, diminuindo a pressão e a temperatura do sistema. Esse
+            processo ajuda a manter o funcionamento estável e seguro, evitando danos ao sistema e melhorando a
+            eficiência do biogerador.</p><br>
+
+        <p><h2>4. Servo Motor como Eletroválvula de Resfriamento</h2></p><br>
+        O servo motor 2 funciona como uma eletroválvula responsável por liberar água para o processo de
+        resfriamento. Quando a temperatura interna do sistema atinge níveis excessivamente elevados, o servo motor é
+        acionado para abrir a válvula de resfriamento, permitindo a entrada de água no sistema de resfriamento. A
+        água é utilizada para reduzir a temperatura da caldeira e do sistema de tubulação, dissipando o calor
+        excessivo.</p><br>
+
+        <p>O resfriamento é uma parte vital do processo, pois a manutenção da temperatura ideal no sistema de geração
+            de vapor é essencial para garantir a eficiência e segurança da produção de energia. O controle preciso da
+            válvula de resfriamento é fundamental para evitar sobreaquecimento, que poderia levar a falhas no sistema ou
+            danos aos componentes.</p><br>
+
+        <p><h2>5. Integração dos Sensores e Atuadores com o Arduino</h2></p><br>
+        <p>Todos os sensores de pressão e temperatura, juntamente com os servo motores, estão conectados ao Arduino,
+            que serve como o cérebro do sistema. O Arduino lê os dados dos sensores em tempo real e, com base nesses
+            dados, aciona os servo motores para regular a pressão e temperatura do sistema conforme necessário. A lógica
+            de controle do Arduino pode ser configurada para reagir a diferentes cenários, como:</p><br>
+
+        <p>Se a temperatura for alta demais, o sistema libera vapor ou aciona a válvula de resfriamento.
+            Se a pressão exceder um limite seguro, o sistema libera vapor ou ajusta outros parâmetros do processo.
+            Se a pressão ou temperatura estiverem fora da faixa ideal, o Arduino ajusta os servos automaticamente,
+            otimizando o sistema.</p><br>
+        <p><h2>6. Conclusão</h2></p><br>
+        <p>Este sistema de gerenciamento de temperatura e pressão para um biogerador de energia utilizando biomassa de
+            banana integra sensores de temperatura e pressão com atuadores (servo motores) para regular o vapor e o
+            resfriamento, garantindo a eficiência e a segurança do processo. O Arduino, atuando como controlador
+            central, monitora constantemente as condições do sistema e toma decisões em tempo real para ajustar a
+            produção de vapor e manter o sistema funcionando de maneira ideal. Dessa forma, é possível gerar energia de
+            forma eficiente a partir da biomassa de banana, controlando os aspectos críticos de temperatura e pressão
+            para evitar danos e garantir o funcionamento contínuo e seguro do biogerador.</p>
+    </div>
+
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prototipo.html">Protótipo</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="artigo.html">Artigo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>Email: BananaBio@gmail.com</p>
+                <p>Telefone: (11) 4002-8922</p>
+                <p> &copy; 2050 BANANABIO &copy;</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Siga-nos</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" target="_blank">
+                            <img class="icons" src="facebook.png" alt="Facebook">
+                        </a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">
+                            <img class="icons" src="twitter.jpg" alt="Twitter">
+                        </a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">
+                            <img class="icons" src="instagram.png" alt="Instagram">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

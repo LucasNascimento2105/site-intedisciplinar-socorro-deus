@@ -1,0 +1,1016 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); /*Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap'); /*Baskervville SC*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Inter', sans-serif;
+    max-width: 100vw;
+    margin: 0; /* Remove margens padrão */
+    overflow-x: hidden;
+}
+
+/* Estilo do menu */
+header {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px; /* Adiciona espaçamento lateral */
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.308); /* Adiciona a sombra projetada para baixo */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+.menu ul li {
+    font-family: 'Baskervville SC', cursive;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    transition: color 0.6s ease, background-color 0.3s ease, border-radius 0.3s ease, transform 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #ffffff1f;
+    border-radius: 6px;
+}
+
+
+
+
+.parallax {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    min-height: 800px;
+    width: 100%;
+    margin-top: 80px;
+    position: relative; /* Necessário para o pseudo-elemento */
+    border-bottom: 25px solid #FFD700; /* Linha de contorno abaixo da imagem */
+    margin-bottom: 100px;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p2/5042656-bananeira-e-folhas-de-bananeira-gratis-foto.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.9) brightness(0.4);
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-flow: column;
+    font-family: 'Baskervville SC', cursive;
+    color: rgb(255, 255, 255);
+    max-width: 370px;
+}
+.h1B{
+    color:#FFD700;
+}
+
+.p1 {
+    width: 100%; 
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove paddings */
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: 'Inter', cursive;
+    color: #fff;
+}
+
+
+.card2 {
+    max-width: 500px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Baskervville SC', cursive;
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+
+.card2:hover {
+    transform: scale(0.99);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.p2 {
+    color: #000000;
+    width: 100%; 
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove paddings */
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: 'Inter', cursive;
+    font-weight: 500;
+}
+
+.card2 a {
+    color: #000000;
+}
+
+.pt2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 600px;
+    padding: 20px;
+    padding-left: 200px;
+    padding-right: 400px;
+    padding-top: 50px;
+    color: #dbba00;
+}
+
+.pt2 hr {
+    max-width: 400px;
+    border: none;
+    height: 1px;
+    background-color: #dbba00;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.pt2 p {
+    max-width: 500px;
+    color: #000000;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: 'Inter', cursive;
+    font-weight: 500;
+}
+.image-wrapper {
+    position: relative; /* Permite posicionar a div de imagens em relação ao pai */
+    max-width: 600px;
+    top: -450px; /* Move a div para 50% da altura do pai */
+    left: 800px;
+    display: flex;
+    flex-direction: row; /* Alinha as imagens na horizontal */
+}
+
+.image-collage {
+    display: flex;
+    flex-direction: row; /* Alinha as imagens na horizontal */
+}
+
+.img1 {
+    max-width: 250px; /* Define o tamanho da primeira imagem */
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column; /* Empilha as imagens 2 e 3 verticalmente */
+}
+
+.img2, .img3 {
+    max-width: 250px; /* Define o tamanho das imagens 2 e 3 */
+    margin: 0; /* Remove qualquer margem entre as imagens */
+}
+
+.pt3 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #e2e2e2;
+    width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+    padding: 40px;
+    padding-bottom: 200px;
+    color: #dbba00;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center;
+    width: 100%;
+    gap: 0; /* Remove o espaçamento entre os cards */
+    
+}
+
+.card-item {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    transform-origin: top;
+    transition: transform 0.6s ease;
+    padding: 20px;
+    z-index: 1;
+}
+
+.card-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Posiciona levemente fora do card */
+    right: -15px; /* Posiciona levemente fora do card */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; /* Tamanho desejado do triângulo */
+    border-right: 20px solid transparent; /* Tamanho desejado do triângulo */
+    border-top: 20px solid #FFD700; /* Cor do triângulo */
+    transform: rotate(-45deg);
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.6s ease; /* Suaviza a transição */
+}
+
+.card-item:hover::after {
+    opacity: 1; /* Torna visível ao passar o mouse */
+}
+
+
+.card-item:hover {
+    transform: scaleY(1.1);
+}
+
+
+
+.card-item-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale(0.7) brightness(0.3);
+    transition: none;
+}
+
+.card-item-text {
+    display: flex; /* Usar flexbox para alinhar os h1 lado a lado */
+    justify-content: left; /* Espaço entre os textos */
+    width: 100%; /* Garante que ocupe toda a largura */
+    margin-bottom: 25px;
+    max-height: 100%;
+}
+
+.card-item-h1 {
+    color: #fff;
+    font-family: 'Inter', cursive;
+    max-height: 100%;
+}
+
+.barra {
+    color: #FFD700;
+    font-family: 'Inter', cursive;
+    font-weight: 900;
+    max-height: 100%;
+}
+
+.card-item p {
+    font-family: 'inter', cursive;
+    color: white;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.6s ease; /* Suaviza a transição */
+    max-height: 100%; /* Limita a largura máxima do parágrafo */
+    white-space: normal; /* Garante que o texto quebre normalmente */
+    line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+}
+
+.card-item:hover p {
+    opacity: 1; /* Torna visível ao passar o mouse */
+}
+
+.pt4 {
+    display: flex;
+    background-color: rgb(218, 218, 218);
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.barra1 {
+    margin-top: 50px;
+    margin-right: 10px; /* Espaço entre os elementos */
+    color: #dbba00;
+    font-family: 'Inter', cursive;
+    font-weight: 900;
+    max-height: 100%;
+}
+.card-item-h12 {
+    margin-top: 50px;
+    color: #dbba00;
+    font-family: 'Inter', cursive;
+    max-height: 100%;
+}
+.card-content {
+    display: flex;
+    flex-direction: column; /* Coloca o parágrafo abaixo do título */
+    width: 100%;
+    margin-top: 20px; /* Espaço entre o título e o parágrafo */
+}
+
+.card-image {
+    background-color: #ffffff65;
+    border-radius: 50%;
+    position: relative;
+    top: -550px;
+    align-self: flex-end; /* Alinha a imagem à direita */
+    margin-top: 20px; /* Espaço entre o parágrafo e a imagem */
+}
+.card-content p{
+    margin-top: 50px;
+    max-width: 800px;
+    text-align: justify;
+    font-family: 'inter', cursive;
+    font-size: 1.2rem;
+}
+
+.pt5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.card5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.card-header {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.carro-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    max-width: 600px;
+    margin-left: 810px;
+    padding-left: 100px;
+}
+
+.carousel-container {
+    position: relative;
+    top: -250px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative; /* Adicionando position relative para que os botões fiquem em relação ao container */
+}
+
+/* Ajuste o carrossel para caber corretamente */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* Botões do carrossel */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10; /* Certifica-se de que os botões estejam acima dos outros elementos */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.card-item-h123 {
+    margin-top: 200px;
+    color: #dbba00;
+    font-family: 'Inter', cursive;
+    max-height: 100%;
+}
+.barra2 {
+    margin-top: 200px;
+    color: #dbba00;
+    font-family: 'Inter', cursive;
+    font-weight: 900;
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        justify-content: center;
+        height: 60px;
+    }
+
+    .menu ul li {
+        margin: 0 10px;
+    }
+
+    .menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    .parallax {
+        margin-top: 60px; /* Ajuste para telas menores */
+    }
+
+    section {
+        margin-bottom: 40px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu ul li a {
+        font-size: 1.2rem;
+    }
+
+    .parallax {
+        margin-top: 60px;
+    }
+
+    section {
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+}
+
+/* Estilo do rodapé */
+.site-footer {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #000000;
+    color: #fff;
+    padding: 0px 0;
+    font-family: 'Arial', sans-serif;
+}
+.site-footer h3{
+    margin-top: 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    margin: 0 20px;
+}
+.footer-links h3, .footer-contact h3, .footer-social h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.footer-links ul, .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .social-icons li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a, .social-icons li a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover, .social-icons li a:hover {
+    color: #fff;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.icons{
+    width: 30%;
+}
+#ababuimagem {
+    max-width: 700px; /* A imagem não ultrapassa 100% da largura do seu contêiner */
+    height: auto;    /* Mantém a proporção da imagem */
+    display: block;  /* Remove o espaço extra abaixo da imagem */
+    margin-left: auto;  /* Alinha a imagem ao centro horizontalmente */
+    margin-right: auto; /* Alinha a imagem ao centro horizontalmente */
+    /* Para centralização vertical, podemos usar flexbox ou grid no contêiner pai */
+}
+.parallax2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    min-height: 800px;
+    width: 100%;
+    margin-top: 80px;
+    position: relative; /* Necessário para o pseudo-elemento */
+    border-bottom: 25px solid #FFD700; /* Linha de contorno abaixo da imagem */
+    margin-bottom: 100px;
+}
+
+.parallax2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('ababu.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.9) brightness(0.4);
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+table {
+    max-width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}  
+
+.pt3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pt3 > div {
+    margin-bottom: 10px;
+}
+/* Estilo para a div.abubu */
+.abubu {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    color: #34495E;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.abubu h1 {
+    font-size: 2.5rem;
+    color: #16A085; /* Cor principal para o título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os títulos dentro do texto, que são numerados (1., 2., 3., etc.) */
+.abubu p:first-of-type {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    color: #16A085;
+}
+
+.abubu p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Adicionando destaque aos parágrafos numerados (os que têm título, como "1.", "2.", etc.) */
+.abubu p:has(b) {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #2980B9; /* Cor para os títulos numerados */
+    margin-top: 25px;
+}
+
+/* Melhorando o espaçamento dos parágrafos */
+.abubu p + p {
+    margin-top: 15px;
+    font-size: 1.2rem; /* Aumentando um pouco o tamanho para facilitar a leitura */
+}
+
+/* Estilo para os números (1., 2., 3.) em negrito */
+.abubu p b {
+    font-size: 1.3rem;
+    color: #2980B9;
+    margin-right: 10px;
+}
+
+/* Personalizando as quebras de linha */
+.abubu br {
+    display: none; /* Removendo a quebra de linha extra, já que estamos ajustando os espaçamentos */
+}
+
+
+/* Estilo para a seção sobre-nos */
+.sobre-nos-improvavel {
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px; /* Adiciona margem superior */
+}
+
+/* Estilo para o container de cards */
+.container-de-cards-improvaveis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Agora são 4 cards por linha */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilo para os cards */
+.card-membro-1, .card-membro-2, .card-membro-3, .card-membro-4 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Imagem dentro do card */
+.card-membro-1 img, .card-membro-2 img, .card-membro-3 img, .card-membro-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Títulos e textos dentro dos cards */
+.card-membro-1 h3, .card-membro-2 h3, .card-membro-3 h3, .card-membro-4 h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+/* Efeito de hover nos cards */
+.card-membro-1:hover, .card-membro-2:hover, .card-membro-3:hover, .card-membro-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de texto adicional nos cards */
+.card-membro-1 p, .card-membro-2 p, .card-membro-3 p, .card-membro-4 p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsividade: ajusta a quantidade de cards por linha em telas menores */
+@media (max-width: 1200px) {
+    .container-de-cards-improvaveis {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards por linha */
+    }
+}
+
+@media (max-width: 900px) {
+    .container-de-cards-improvaveis {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards por linha */
+    }
+}
+
+@media (max-width: 600px) {
+    .container-de-cards-improvaveis {
+        grid-template-columns: 1fr; /* 1 card por linha */
+    }
+}
+/* Estilo para o main */
+main {
+    margin-top: 100px; /* Garantindo que o conteúdo do main não sobreponha o navbar */
+    padding: 20px;
+}
+
+/* Estilo do artigo (card) */
+.artigo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    max-width: 1200px; /* Limita o tamanho do card */
+    margin: 0 auto; /* Centraliza o card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Título do artigo */
+.artigo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o conteúdo do artigo */
+.artigo .conteudo-artigo p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+        font-family: 'inter', cursive;
+        text-align: justify;
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+}
+
+/* Link dentro do artigo */
+.link-artigo {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+/* Rodapé do artigo */
+.artigo-footer {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 30px;
+}
+
+.abubu h1{
+    font-family: 'Inter', cursive;
+    font-weight: 900;
+}
+
+.abubu h2{
+    font-family: 'Inter', cursive;
+    font-weight: 900;
+    color: #000000;
+}
+.abubu p{
+    font-family: 'Inter', cursive;
+    color: #000000;
+    text-align: justify;
+}
+
+/* Estilização do link como botão */
+.link-artigo {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #007bff; /* Cor do fundo do botão */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o hover do botão */
+.link-artigo:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Sutileza extra no hover */
+}
+.sobre-nos-improvavel h1 {
+    font-family: 'Arial', sans-serif; /* ou outra fonte de sua escolha */
+    font-size: 2.5em;
+    color: #333; /* Ajuste a cor conforme necessário */
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background: linear-gradient(to right, #ffee00, #ffbb00); /* Gradiente opcional */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo-artigo p{
+    text-align: center;
+}
+
+.artigo h1{
+    padding: 45px;
+}
+
+.artigopdf {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 60px;
+}
+.cansei {
+    background-color: #dfdfdf;
+    display: flex;
+    width: 100%;
+    height: 600px; /* Define a altura fixa */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    position: relative; /* Necessário para o posicionamento absoluto da .card-imagens */
+    align-items: center; /* Centraliza o conteúdo na vertical */
+}
+.cansei p {
+    font-family: 'inter', cursive;
+    text-align: justify; /* Centraliza o texto dentro do parágrafo */
+    margin-top: 200px; /* Garante que o texto fique abaixo das imagens */
+    z-index: 1; /* Garante que o parágrafo fique abaixo da .card-imagens */
+    padding-top: 100px;
+    padding: 200px;
+    font-weight: 800;
+}
+.card-imagens {
+    display: flex;
+    gap: 30px;
+    padding-top: 80px;
+    align-items: flex-start; /* Alinha no topo verticalmente */
+    background-color: #dfdfdf;
+    position: absolute; /* Posiciona a .card-imagens sobre a .cansei */
+    top: 0; /* Fica no topo do contêiner */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+}
+
+.card-imagens .imagem {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5) grayscale(1); /* Inicialmente a imagem fica escura */
+    transition: filter 0.8s ease, transform 0.3s ease; /* Transição suave para o efeito */
+}
+
+.card-imagens .imagem:hover {
+    filter: brightness(1) grayscale(0); /* Torna a imagem mais clara ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem */
+}
+
+
+
+
